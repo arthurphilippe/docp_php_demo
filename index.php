@@ -13,9 +13,9 @@
 <body>
     <?php
     include "View/header.html";
-    include_once("Controller/Root.php");
+    include_once("Controller/IndexController.php");
 
-    $controller = new Controller\Root();
+    $controller = new IndexController();
     $controller->invoke();
     ?>
 </body>

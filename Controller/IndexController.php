@@ -1,6 +1,6 @@
-<?php namespace Controller;
+<?php
 
-class Root
+class IndexController
 {
     public function __construct()
     {
