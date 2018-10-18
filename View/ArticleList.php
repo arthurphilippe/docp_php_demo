@@ -6,7 +6,7 @@
         <?php foreach ($articles as $article) { ?>
             <li class="list-group-item">
                 <a class="list-group-item-heading"
-                    href="index.php?articleId=<?php echo $article['Id']; ?>">
+                    href="index.php?article=<?php echo $article['Id']; ?>">
                     <?php print($article['Title']); ?>
                 </a>
                 <br>

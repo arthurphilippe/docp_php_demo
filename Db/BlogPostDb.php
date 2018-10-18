@@ -23,6 +23,14 @@ class BlogPostDb
         return $articles;
     }
 
+    public function getById($id)
+    {
+        $data = $this->_db->query("SELECT * FROM articles WHERE Id = '$id'");
+        if ($data == null)
+            die(poderr);
+        return $data->fetch();
+    }
+
     public function countAll()
     {
         if ($this->_db == null) {
