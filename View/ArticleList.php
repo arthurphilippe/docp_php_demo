@@ -15,7 +15,7 @@
                 </p>
                 <?php if ($article['Image'] != "") { ?>
                     <br>
-                    <img src=<?php echo $article['Image']; ?> alt="Class z50000" class=img-thumbnail width="150">
+                    <img src=<?php echo $article['Image']; ?> alt="thumbnail" class=img-thumbnail width="150">
                     <?php
 
                 } ?>

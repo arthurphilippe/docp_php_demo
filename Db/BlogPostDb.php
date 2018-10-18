@@ -20,9 +20,6 @@ class BlogPostDb
     {
         $data = $this->_db->query("SELECT * FROM articles");
         $articles = $data->fetchAll();
-        foreach ($articles as $post)
-            print($post['Title']);
-
         return $articles;
     }
 

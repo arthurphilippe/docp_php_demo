@@ -28,7 +28,7 @@ CREATE TABLE `articles` (
   `Image` text DEFAULT NULL,
   `Body` text DEFAULT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `articles` (
 
 LOCK TABLES `articles` WRITE;
 /*!40000 ALTER TABLE `articles` DISABLE KEYS */;
-INSERT INTO `articles` VALUES (1,'Sample Article 1',NULL,'This a paper on how trains are great');
+INSERT INTO `articles` VALUES (1,'Sample Article 1',NULL,'This a paper on how trains are great'),(2,'Spotted a class z500000 train','https://upload.wikimedia.org/wikipedia/commons/1/14/Z50000_IDFM_et_SNCF_Carmillon.jpg','Look at this bad boy.');
 /*!40000 ALTER TABLE `articles` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-10-18 11:13:52
+-- Dump completed on 2018-10-18 13:26:16
