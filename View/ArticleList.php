@@ -5,9 +5,10 @@
     <ul class="list-group">
         <?php foreach ($articles as $article) { ?>
             <li class="list-group-item">
-                <strong class="list-group-item-heading">
+                <a class="list-group-item-heading"
+                    href="index.php?articleId=<?php echo $article['Id']; ?>">
                     <?php print($article['Title']); ?>
-                </strong>
+                </a>
                 <br>
                 <p class="list-group-item-text">
                     <?php print(substr($article['Body'], 0, 50));
