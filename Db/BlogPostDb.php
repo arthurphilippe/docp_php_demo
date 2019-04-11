@@ -9,7 +9,7 @@ class BlogPostDb
     public function __construct()
     {
         try {
-            $this->_db = new PDO("mysql:dbname=blog;host=127.0.0.1", $this->_user, $this->_pass);
+            $this->_db = new PDO("mysql:dbname=blog;host=database", $this->_user, $this->_pass);
         } catch (PDOException $e) {
             /* TODO: redirect to a proper error page */
             throw $e;
